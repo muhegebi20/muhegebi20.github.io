@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: large;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .icon {
+        width: 35px;
+        height: 35px;
+      }
+      .head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      .profile {
+        border: 4px solid rgb(80, 171, 227);
+        border-radius: 50%;
+        width: 120px;
+        height: 150;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 20px;
+      }
+      tr {
+        margin: 20px;
+      }
+      .skills,
+      .name,
+      .education,
+      .achievements {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(17, 95, 198);
+        text-align: center;
+      }
+      .achievements li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+      }
+      @media screen and (max-width: 480px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="profile">
+        <img style="z-index: -1" src="me.jpg" alt="" srcset="" />
+      </div>
+      <div class="name">
+        <p style="font-size: 2rem; font-weight: 600; margin: 0">
+          Muhammedamin Gebi Sinkero
+        </p>
+        <span style="text-align: start; color: gray">Backend Developer</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <table>
+          <tr class="education">
+            <td style="margin-top: 20px">
+              <h2><u>Education</u></h2>
+              <p style="font-size: 1.1rem; font-weight: 600; margin: 0">
+                Bachelor of Computer Engineering
+              </p>
+              <span style="text-align: start; color: gray"
+                >Uludag University</span
+              >
+            </td>
+            <td style="margin-top: 20px">
+              <p style="font-size: 1.1rem; font-weight: 600; margin: 0">
+                Bachelor of Computer Engineering
+              </p>
+              <span style="text-align: start; color: gray"
+                >University of Silesia - Erasmus Exchange</span
+              >
+            </td>
+          </tr>
+          <tr class="contact">
+            <td>
+              <h3><u>Contact Me</u></h3>
+            </td>
+            <td>
+              <a href="mailto:muhegebi2021@gmail.com"
+                ><img class="icon" src="email.jpg" alt="" srcset="" />:
+                muhegebi2021@gmail.com</a
+              >
+            </td>
+            <td>
+              <a href="tel:+905344154918"
+                ><img class="icon" src="phone.png" alt="" srcset="" />:
+                +905344154918</a
+              >
+            </td>
+            <td>
+              <a href="https://www.linkedin.com/in/muhammedamin-s-609a08222/"
+                ><img class="icon" src="linkedin.png" alt="" />: Linkedin</a
+              >
+            </td>
+            <td>
+              <a href="https://github.com/muhegebi20"
+                ><img class="icon" src="github.png" alt="" />: Github</a
+              >
+            </td>
+            <td>
+              <address>
+                <img class="icon" src="location.jpg" alt="" />: Bursa, Türkiye
+              </address>
+            </td>
+          </tr>
+          <tr class="skills">
+            <td>
+              <h3><u>Skills</u></h3>
+              <ul>
+                <li>
+                  <b>Programming:</b>
+                  <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                  </ul>
+                </li>
+                <li>
+                  <b> Frameworks: </b>
+                  <ul>
+                    <li>React</li>
+                    <li>Express</li>
+                    <li>FastAPI</li>
+                  </ul>
+                </li>
+                <li>
+                  <b> Databases: </b>
+                  <ul>
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>SQL Server</li>
+                  </ul>
+                </li>
+                <li>
+                  <b> Tools: </b>
+                  <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Postman</li>
+                  </ul>
+                </li>
+                <li>
+                  <b> Languages: </b>
+                  <ul>
+                    <li>Turkish (C1)</li>
+                    <li>English (B2)</li>
+                    <li>Arabic (B1)</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="right">
+        <table>
+          <tr>
+            <td>
+              <h3 style="margin-left: 20px"><u>Projects</u></h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <b>DepremKit,</b>
+                AI-Powered Earthquake Solutions Hackathon
+                <li>
+                  Developed A React Native app that helps you organize your
+                  emergency preparedness bag for earthquakes and other
+                  emergencies.
+                </li>
+                <li>Tools Used: React Native, SqlLite</li>
+              </ul>
+              <ul>
+                <b>Unmanned Ground Vehicle</b
+                >, Teknofest Project
+                <li>
+                  Worked on hardware and software integration using Raspberry
+                  Pi, sensors, and DC motors.
+                </li>
+                <li>
+                  Designed control logic for movement and obstacle detection.
+                </li>
+                <li>
+                  Gained hands-on experience with embedded systems and sensor
+                  data handling.
+                </li>
+                <li>Tools: Raspberry Pi, Python, Motor Drivers, Sensors.</li>
+              </ul>
+              <ul>
+                <b> Hotel Management System</b
+                >,school project
+                <li>
+                  Led team development of a hotel management system using MVC
+                  architecture with C# Windows Forms and MongoDB
+                </li>
+                <li>
+                  Designed and implemented data models (Room, Guest,
+                  Reservation) with MongoDB BSON attributes and repository
+                  pattern
+                </li>
+                <li>
+                  Developed DAO layer with CRUD operations using MongoDB.Driver
+                  for database interactions
+                </li>
+                <li>Tools Used: C#, Windows Forms, MongoDB, MongoDB.Driver</li>
+              </ul>
+              <ul>
+                <b>Egereef</b>
+                <li>
+                  Developed fully functional web application to give for Egereef
+                  NGO.
+                </li>
+                <li>Tools Used: HTML, CSS, Javascript, Nodejs, Mongodb</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h3 style="margin-left: 25px"><u>Achievements</u></h3>
+              <ul class="achievements">
+                <li>
+                  <p><b>Türkiye Scholarship</b></p>
+                  <p>Sep 2022</p>
+                </li>
+                <li>
+                  <p><b>Erasmus Plus Exchange</b></p>
+                  <p>Sep 2024</p>
+                </li>
+                <li>
+                  <p><b>AI-Powered Earthquake Solutions Hackathon Winner</b></p>
+                  <p>May 2025</p>
+                </li>
+              </ul>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
